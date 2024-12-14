@@ -1,0 +1,123 @@
+ Informatica Course:
+ 
+ Informatica architecture is call service architecture.
+ 
+ Domain is the foundation of the informatica architecture. It is the primary unit providing service for Informatica.
+ Node: Nothing but a physical machine. Logical representation of a machine in a domain.
+ 
+ Master gateway: Primary entry for client request.
+ A service manager starts and execute services in a domain.
+ 
+ Types of Nodes:
+ - Worker Node
+ - Gateway Node
+ - Master Gateway Node
+ 
+ 
+ localhost:1521
+ localhost:1521/XEPDB1
+ https://localhost:5500/em
+ 
+ Informatica DB connection;
+ 
+ user: SYS /AS SYSDBA
+ 
+ Databases for Informatica
+ infa2
+ infarep
+ system
+ 
+ Passwords:
+ admin
+ infa2
+ infarep
+ 
+ Connecting to Oracle instances
+ sys as sysdba
+ then type: startup.
+ proceed to log into the database of your choice.
+ 
+ ==================================
+ How to check for Delta cdc.
+ what is the difference between analytical function vs aggregate function.
+ How do you perform performance tuning.
+ ===================================
+ 
+ How do you use scripting to run a file.
+ 
+ Can you use the Minus SQL query in Hive database?
+ Top down bottom approach, top up bottom approach.
+ 
+ OLAP:
+ Roll-up - Summarize the database
+ Drill-down - Reverse of Roll up
+ Slice and dice - Project and select
+ Pivot (rotate) - Re-orient the cube
+ 
+ Expresssion transformation code to load flatfile concurrent with different names:
+ 'T_FF_Employees_'||TO_CHAR(SYSTIMESTAMP(),'MMDDYYYYHH24MISS')||'.CSV'
+ 
+ Source Qualifier:
+ ==================
+ If the source is Flat file, all the properties will be disabled.
+ Only tracing level will enabled.
+ 
+ 
+ Types of thread in session log:
+ Reader thread
+ Transformation thread
+ Writer thread
+ 
+ Selecting number of ports in properties orders the data by the number you select.
+ If you select one only first column will select. if you select 3 it will take the first 3 columns.
+
+ Left outer join in Oracle and Informatica. Just simply add the symbol (+) at the end of the
+ other table join to perform
+ EMPLOYEES.DEPARTMENT_ID=DEPARTMENTS.DEPARTMENT_ID
+ 
+ 
+ ====
+ FILTER TRANSFORMATION
+ ========
+ Filter transformation is used to filter out records any where in the pipeline
+ 
+Expression Transformation
+First_name to upper case upper(first_name)
+
+last_name adding string '_'  '_'||last_name
+
+email adding @gmail.com if salary is greater than 10000
+IIF(SALARY > 10000,EMAIL||'@gmail.com',EMAIL||'@yahoo.com')
+
+
+phone number removing some string use the replacechar which takes integer as argument
+'+1'||replacechr(0,PHONE_NUMBER,'.','') Replacing with nothing. number 555.003 to 555003
+
+Hire_date leap year:
+IIF(MOD(GET_DATE_PART(HIRE_DATE,'YYYY'),4)=0,'Leap','None leap year')
+ 
+ 
+ 
+ Joiner Transformation
+ =====================
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+INFORMATICA IICS:
+=========================================
+CDI - Cloud Data Integration
+=========================================
+ 
+Reading data from an Excel
+==========================
+First create  (ISM) Intelligence Structure model
+To read rthe file you must have Structure Parser
+
+Master Outer Join -- Right Join
+Detailed Outer Join -- Left Join
