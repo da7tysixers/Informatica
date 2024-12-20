@@ -43,3 +43,17 @@ WHERE e.Title = 'Sales Support Agent'
 GROUP BY e.FirstName, e.LastName, c.FirstName, c.LastName
 -- Filter for customers that spent $45 or more
 HAVING SUM(i.total) >= 45
+
+
+------------
+-- Get track IDs that appear in InvoiceLine
+SELECT TrackId
+FROM Track
+Intersect
+SELECT TrackId
+FROM InvoiceLine
+
+
+
+
+--You can use the AND in a join without the WHERE clause.
