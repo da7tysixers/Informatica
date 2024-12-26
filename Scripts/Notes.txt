@@ -1,0 +1,27 @@
+Moving file from one directory to another:
+mv /path/file.txt /path/folder
+
+"less" can be used to view a file and you can give :n to move to next file,
+:p to go back to the previous one, or :q to quit.
+
+head -n 3 <file name> prints the first 3 lines of the text file.
+tail -n 3 <filename> prints the last 3 lines of a file.
+
+ls -R will list everything in a folder recursively in your home directory.
+ls -R -F prints the entire paths with a /
+
+cut -f 2-5, 8 -d -f means fields 2-5, 8 means columns 2-5 and 8. -d means delimiter.
+
+"history" prints all the commands you entered using "!" and a specific index will run the last command.
+
+Use the "!" with the said command to rerun the command.
+
+
+    -c: print a count of matching lines rather than the lines themselves
+    -h: do not print the names of files when searching multiple files
+    -i: ignore case (e.g., treat "Regression" and "regression" as matches)
+    -l: print the names of files that contain matches, not the matches
+    -n: print line numbers for matching lines
+    -v: invert the match, i.e., only show lines that don't match
+
+"paste" combines files data and read it to you.
