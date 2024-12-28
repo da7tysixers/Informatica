@@ -121,3 +121,7 @@ To read rthe file you must have Structure Parser
 
 Master Outer Join -- Right Join
 Detailed Outer Join -- Left Join
+
+
+Unconnected lookup transformation:
+passing function: LKP.LKPTRANS(passing field)
