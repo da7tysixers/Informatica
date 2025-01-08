@@ -125,3 +125,51 @@ Detailed Outer Join -- Left Join
 
 Unconnected lookup transformation:
 passing function: LKP.LKPTRANS(passing field)
+
+
+What is the defference between cluster index and non cluster index
+when loading a flat file to flat file and you want bottom record how do you know you are getting
+the botton record? Informatica.
+
+How do you check informatica log issue using script?
+How do you load a file using informatica script?
+
+
+===============
+Update Strategy
+===============
+
+An active, Connected
+dd - data driven
+
+dd_insert 0
+dd_update 1
+dd_delete 2        (Instead of delete, we will soft delete -- Inactive)
+dd_reject 3
+
+Target ---> Primary key
+
+=============
+SCD Types
+=============
+TYPE 1
+MD5 is a function in informatica. Used to generate a hash value. Based on the hash
+value we will compare the source data and target data and decide if we will go for update
+or insert logic.
+
+Type 1: No history will be maintained
+		Simple update
+		
+TYPE 2
+Type 2: History will be maintained
+		Row level history
+			Method - 1 - Flag
+			Method - 2 Version
+			Method - 3 Date
+			
+TYPE 3
+Type 3: Recent history will be maintained
+		Column level history
+
+
+Surrogate Key:
