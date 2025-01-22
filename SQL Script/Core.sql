@@ -31,3 +31,25 @@ Please append a semicolon ";" at the end of the query and enter your query in a 
 */
  select distinct city from station
  where mod(id, 2) = 0
+
+ ---------------------------------------------
+ Case statement for unit testing Informatica
+
+ select employee_id, salary from core.employees
+minus
+select employee_id, salary+(salary*0.1) from hr.employees;
+
+select employee_id, salary from core.employees
+minus
+select employee_id, 
+case when salary <= 10000 then salary+(salary*0.2)
+else salary+(salary*0.1)  end salary from hr.employees
+
+
+
+SELECT employee_id, salary from core.employees
+minus
+select employee_id,
+case when salary <= 5000 then salary+(salary*0.3)
+when salary > 5000 and salary <= 10000 then salary+(salary*0.2)
+else salary+(salary*0.1) end salary from hr.employees;

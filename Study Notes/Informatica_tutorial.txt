@@ -135,6 +135,11 @@ How do you check informatica log issue using script?
 How do you load a file using informatica script?
 
 
+
+Tracing level: The amount of details in the session log. define the amount 
+of data you wish to write in the session log when you execute the workflow. 
+The tracing level is a very important aspect of Informatica, as it helps in analyzing errors.
+
 ===============
 Update Strategy
 ===============
