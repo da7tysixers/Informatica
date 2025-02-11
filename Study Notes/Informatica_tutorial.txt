@@ -178,3 +178,25 @@ Type 3: Recent history will be maintained
 
 
 Surrogate Key:
+
+
+Source control:
+
+Oracle New boxes.
+
+Oracle
+
+standard change, 
+Information change.
+CCS local cab
+
+Change management global cab.
+
+
+Normalizer Transformation:
+--An Active, connected transformation
+Cobol --> Known as mainframe data. You can use normalizer to perform this.
+
+GK - generated Key Value
+GC ID - generated column value
+
